@@ -1,0 +1,436 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+}
+
+.container {
+  width: 88%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 993px) {
+  .container {
+    width: 83%;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.sale_banner {
+  clip-path: polygon(0 0, 100% 0, 94% 49%, 100% 100%, 0 100%, 6% 49%);
+}
+
+/* Scrollbar design  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #013668;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.ExploreBtn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #013668;
+  color: white;
+  border: 1px solid #013668;
+  text-decoration: none;
+  padding: 11px 0px;
+  border-radius: 36px;
+  transition: 0.5s;
+  text-align: center;
+  max-width: 100%;
+}
+.scheduleBtn {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid #74c3be;
+  text-decoration: none;
+  padding: 11px 0px;
+  border-radius: 36px;
+  transition: 0.5s;
+  text-align: center;
+  color: #013668;
+}
+
+.offer_btn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ef4b27;
+  color: white;
+  border: 1px solid #ef4b27;
+  text-decoration: none;
+  padding: 11px 39px;
+  border-radius: 36px;
+  transition: 0.5s;
+  text-align: center;
+  max-width: 100%;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #013668;
+  color: white;
+  border: 1px solid #013668;
+  text-decoration: none;
+  padding: 11px 39px;
+  border-radius: 36px;
+  transition: 0.5s;
+  text-align: center;
+  max-width: 100%;
+}
+
+.ctaBtn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #25d366;
+  color: white;
+  border: 1px solid #25d366;
+  text-decoration: none;
+  padding: 11px 39px;
+  border-radius: 36px;
+  transition: 0.5s;
+  text-align: center;
+  max-width: 100%;
+}
+
+.cart-btn:hover,
+.ExploreBtn:hover {
+  background-color: #f0f3f6;
+  border-color: #f0f3f6;
+  color: #013668;
+}
+
+.button:hover {
+  background-color: #f0f3f6;
+  border-color: #f0f3f6;
+  color: #013668;
+}
+
+.button2 {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid #74c3be;
+  text-decoration: none;
+  padding: 11px 39px;
+  border-radius: 36px;
+  transition: 0.5s;
+  text-align: center;
+  color: #013668;
+}
+
+.button2:hover,
+.scheduleBtn:hover {
+  background-color: #74c3be;
+  color: white;
+}
+
+.blue {
+  background: linear-gradient(180deg, #e3eefe 0%, rgba(227, 238, 254, 0) 50%);
+}
+
+.orange {
+  background: linear-gradient(180deg, #fef2e4 0%, rgba(254, 242, 228, 0) 50%);
+}
+
+.red {
+  background: linear-gradient(180deg, #fde3ea 0%, rgba(253, 227, 234, 0) 50%);
+}
+
+.green {
+  background: linear-gradient(180deg, #ebf6ea 0%, rgba(235, 246, 234, 0) 50%);
+}
+
+.purple {
+  background: linear-gradient(180deg, #f9f3fb 0%, rgba(249, 243, 251, 0) 50%);
+}
+
+.yellow {
+  background: linear-gradient(180deg, #fffde6 0%, rgba(255, 253, 230, 0) 50%);
+}
+
+/* swiper css */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+@media (max-width: 640px) {
+  .locationSwiperDiv,
+  .testimonialSwiperDiv {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.locationSwiper {
+  height: 330px;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 66px !important;
+  height: 66px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+@media (max-width: 992px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: bold;
+  color: #013668;
+}
+
+.swiper-button-next {
+  right: 64px;
+}
+
+.swiper-button-prev {
+  left: 64px;
+}
+
+.review_quote::before {
+  content: " ";
+  display: inline-block;
+  background-image: url("/svg/quoteLeft.svg");
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: -6px;
+  left: -5px;
+}
+
+.review_quote::after {
+  content: " ";
+  display: inline-block;
+  background-image: url("/svg/quoteRight.svg");
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: -5px;
+  left: 5px;
+}
+
+.accordion:hover {
+  background: linear-gradient(180deg, #eff2f5 0%, rgba(239, 242, 245, 0) 32%);
+}
+
+.accordion_content ul li::marker {
+  content: "⬤";
+  color: #013668;
+}
+
+.accordion_content ul li {
+  padding-left: 10px;
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  .accordion_content ul li {
+    font-size: 14px;
+  }
+}
+
+.accordion_content::before {
+  content: " ";
+  display: block;
+  width: 2px;
+  background-color: #74c3be;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  margin-left: 42px;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+
+  height: 3px;
+  background: #013668;
+  width: 100%;
+  top: 7px;
+}
+
+.indicator {
+  position: absolute;
+  left: 45%;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #013668;
+}
+
+/* custom checkbox css */
+
+.multiSelect input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #a0a0a0;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" version="1.1" id="img"><defs id="defs8"/><path fill="white" d="M 20.3,4.7 8.5,16.5 3.7,11.7 2.3,13.15 8.5,19.3 21.7,6.1 Z" id="path2" style="stroke-width:0.5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  border: 4px solid #c7e7e5;
+  background-color: #74c3be;
+  width: 20px;
+  height: 20px;
+}
+
+summary {
+  display: flex;
+}
+
+summary::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("/svg/arrow.svg");
+  background-size: cover;
+  margin-left: 0.75em;
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+.multiSelect .ant-select-selector {
+  border: 2px solid #eeeeee;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background: none;
+}
+
+.multiSelect .ant-select-selection-item {
+  color: black;
+}
+
+.multiSelect .ant-select-selection-item-remove {
+  color: #74c3be;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.multiSelect .ant-select-selection-placeholder {
+  color: #bfbfbf;
+}
+
+.multiSelect .ant-select-arrow {
+  display: none;
+}
