@@ -10,13 +10,14 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'api.meowcademy.com',
             },
-            {
-                protocol: 'https',
-                hostname: 'meowacademy.flutterclone.com',
-            },
+            // {
+            //     protocol: 'https',
+            //     hostname: 'meowacademy.flutterclone.com',
+            // },
            
         
         ],
+        unoptimized:true
     },
 };
 
