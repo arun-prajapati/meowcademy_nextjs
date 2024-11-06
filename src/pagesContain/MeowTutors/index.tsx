@@ -8,7 +8,7 @@ const MeowTutors = async () => {
   // --get Teacher list data--
   const teachers = await apihandler({
     path: "/api/teacher_list",
-    apiConfig: { method: "GET",cache:'no-store' },
+    apiConfig: { method: "GET",next: { revalidate: 3600 } },
   });
   const colors = ["green", "orange", "red", "purple", "yellow"];
 
