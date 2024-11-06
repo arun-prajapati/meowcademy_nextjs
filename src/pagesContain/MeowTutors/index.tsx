@@ -5,10 +5,10 @@ import apihandler from "@/lib/apihandler";
 import { TeacherListType } from "@/types/type";
 
 const MeowTutors = async () => {
-  // --get Subject Group data--
+  // --get Teacher list data--
   const teachers = await apihandler({
     path: "/api/teacher_list",
-    apiConfig: { method: "GET" },
+    apiConfig: { method: "GET",cache:'no-store' },
   });
   const colors = ["green", "orange", "red", "purple", "yellow"];
 
