@@ -10,13 +10,9 @@ const MeowTutors = async () => {
     path: "/api/teacher_list",
     apiConfig: {
       method: "GET",
-      headers: {
-        'Cache-Control': 'no-store, max-age=0',
-        Pragma: 'no-cache',
-      },
+     
     },
   });
-  console.log(teachers)
   const colors = ["green", "orange", "red", "purple", "yellow"];
 
   return (

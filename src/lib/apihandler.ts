@@ -8,7 +8,10 @@ const apihandler = async ({
     try {
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}${path}`,
-        apiConfig
+        {
+          ...apiConfig,
+          cache: "no-store", // Disable caching
+        }
       );
   
       if (!response.ok) {

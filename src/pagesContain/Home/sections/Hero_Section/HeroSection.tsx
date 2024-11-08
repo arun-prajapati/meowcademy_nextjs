@@ -138,13 +138,13 @@ const HeroSection = ({ homePage }: { homePage: HomePageTypes[] }) => {
                   </div>
                 </div>
 
-                <div className="relative">
+                <div className="relative h-[450px]">
                   <Image
                     width={700}
                     height={700}
                     src={home.image_url}
                     alt=""
-                    className=" rounded-2xl"
+                    className=" rounded-2xl h-full object-cover"
                   />
                   <div className=" absolute  bg-blue-400 top-1/3 left-0 right-0 bottom-[5%] opacity-[0.18]  blur-[60px]"></div>
                   {(home.video || home.custom_video_url) && (
