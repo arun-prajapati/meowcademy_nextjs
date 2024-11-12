@@ -41,8 +41,7 @@ export default function RootLayout({
        
         />
         <>
-        <MaintenancePage/>
-          {/* <BasketContextProvider>
+          <BasketContextProvider>
             <>
               <Header />
 
@@ -50,7 +49,7 @@ export default function RootLayout({
               <FloatingBasketBtn />
               <Footer />
             </>
-          </BasketContextProvider> */}
+          </BasketContextProvider>
         </>
       </body>
     </html>
