@@ -6,6 +6,7 @@ import Footer from "@/components/footer/Footer";
 import BasketContextProvider from "@/context/BasketContextProvider";
 import FloatingBasketBtn from "@/components/FloatingBasketBtn";
 import NextTopLoader from "nextjs-toploader";
+import MaintenancePage from "@/components/MaintenancePage";
 
 // --font family--
 const poppins = Poppins({
@@ -40,7 +41,8 @@ export default function RootLayout({
        
         />
         <>
-          <BasketContextProvider>
+        <MaintenancePage/>
+          {/* <BasketContextProvider>
             <>
               <Header />
 
@@ -48,7 +50,7 @@ export default function RootLayout({
               <FloatingBasketBtn />
               <Footer />
             </>
-          </BasketContextProvider>
+          </BasketContextProvider> */}
         </>
       </body>
     </html>
