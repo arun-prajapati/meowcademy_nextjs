@@ -15,25 +15,24 @@ const HeroSection = ({ homePage }: { homePage: HomePageTypes[] }) => {
           {/* Hero section video */}
           <div className="pt-24">
             <div className="w-full relative">
+
               <video
                 playsInline
                 autoPlay
                 muted
-                loop
-                preload="auto"
-                className="h-svh w-full object-cover overlayVideo"
-              >
-                <source
-                  src={home?.desktop_video}
-                  media="(min-width: 601px)"
-                />
-                <source
-                  src={home?.moblie_video}
-                  media="(max-width: 600px)"
-                />
-                Your browser does not support this video.{" "}
-                <a href={home?.desktop_video}>Download the video</a>
-              </video>
+                loop     
+                className="h-svh w-full object-cover overlayVideo hidden sm:block"
+                src={home?.desktop_video}
+              />
+
+              <video
+                playsInline
+                autoPlay
+                muted
+                loop     
+                className="h-svh w-full object-cover overlayVideo block sm:hidden"
+                src={home?.moblie_video}
+              />
 
               <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-40">
                 <div className="text-white text-center">
