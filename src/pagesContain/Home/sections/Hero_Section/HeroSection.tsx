@@ -20,16 +20,15 @@ const HeroSection = ({ homePage }: { homePage: HomePageTypes[] }) => {
                   muted
                   playsInline
                   loop
+                  preload="auto"
                   className="h-svh w-full object-cover overlayVideo"
                 >
                   <source
                     src={home?.desktop_video}
-                    type="video/mp4"
                     media="(min-width: 601px)"
                   />
                   <source
                     src={home?.moblie_video}
-                    type="video/mp4"
                     media="(max-width: 600px)"
                   />
                 </video>
