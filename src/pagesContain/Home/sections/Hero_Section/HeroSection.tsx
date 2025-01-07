@@ -25,12 +25,10 @@ const HeroSection = ({ homePage }: { homePage: HomePageTypes[] }) => {
               >
                 <source
                   src={home?.desktop_video}
-                  type="video/mp4"
                   media="(min-width: 601px)"
                 />
                 <source
                   src={home?.moblie_video}
-                  type="video/mp4"
                   media="(max-width: 600px)"
                 />
                 Your browser does not support this video.{" "}
