@@ -3,7 +3,6 @@ import { MdOutlineWhatsapp } from "react-icons/md";
 import OpenVideo from "./components/OpenVideo";
 import Image from "next/image";
 import { HomePageTypes } from "@/types/type";
-import { getVideoType } from "@/lib/getVideoType";
 
 const HeroSection = ({ homePage }: { homePage: HomePageTypes[] }) => {
   const initialTime = new Date();
