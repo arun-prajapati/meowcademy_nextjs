@@ -7,12 +7,19 @@ const PrivacyPolicy = () => {
         DATA PROTECTION NOTICE FOR CUSTOMERS
       </h1>
       <p>
-        This Data Protection Notice (&quot;<span className="font-bold">Notice</span>&quot;) sets out the basis which <span className="italic">MEOWCADEMY PRIVATE LIMITED (UEN:202410054H)</span> 
-        (“<span className="font-bold">we</span>”, “<span className="font-bold">us</span>”, or “<span className="font-bold">our</span>”) may collect, use, disclose or otherwise process
-        personal data of our customers in accordance with the Personal Data
-        Protection Act (“PDPA”). This Notice applies to personal data in our
-        possession or under our control, including personal data in the
-        possession of organisations which we have engaged to collect, use,
+        This Data Protection Notice (&quot;
+        <span className="font-bold">Notice</span>&quot;) sets out the basis
+        which{" "}
+        <span className="italic">
+          MEOWCADEMY PRIVATE LIMITED (UEN:202410054H)
+        </span>
+        (“<span className="font-bold">we</span>”, “
+        <span className="font-bold">us</span>”, or “
+        <span className="font-bold">our</span>”) may collect, use, disclose or
+        otherwise process personal data of our customers in accordance with the
+        Personal Data Protection Act (“PDPA”). This Notice applies to personal
+        data in our possession or under our control, including personal data in
+        the possession of organisations which we have engaged to collect, use,
         disclose or process personal data for our purposes.
       </p>
 
@@ -40,13 +47,20 @@ const PrivacyPolicy = () => {
           </li>
           <li className="flex gap-6">
             <span>2.</span>
-            <p>
-              Depending on the nature of your interaction with us, some examples
-              of personal data which we may collect from you include name,
-              residential address, email address, telephone number, nationality,
-              gender, date of birth, marital status, photograph and videos of
-              children during classes or lessons.
-            </p>
+            <div>
+              <p>
+                Depending on the nature of your interaction with us, some
+                examples of personal data which we may collect from you include
+                name, residential address, email address, telephone number,
+                nationality, gender, date of birth, marital status, photograph
+                and videos of children during classes or lessons.
+              </p>
+              <p className=" mt-2">
+                MPL may use the material for marketing purposes such as
+                advertising on social media platforms like Instagram, Facebook,
+                Tik Tok and MPL’s website.
+              </p>
+            </div>
           </li>
           <li className="flex gap-6">
             <span>3.</span>
