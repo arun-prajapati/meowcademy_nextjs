@@ -1,35 +1,41 @@
-import Breadcrumb from "@/components/Breadcrumb"
+import Breadcrumb from "@/components/Breadcrumb";
 import apihandler from "@/lib/apihandler";
 import { LocationDataType } from "@/types/type";
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 
-const Location = async() => {
-    const location = await apihandler({
-        path: "/api/location_list",
-        apiConfig: { method: "POST" },
-      });
+const Location = async () => {
+  const location = await apihandler({
+    path: "/api/location_list",
+    apiConfig: { method: "POST" },
+  });
   return (
-   <>
-   
-   <div className="pt-24">
+    <>
+      <div className="pt-24">
         <Breadcrumb menu="Locations" />
       </div>
-
 
       <div className="container allLocationDiv my-8">
         <h3 className="text-center text-4xl font-bold mb-10">Our Locations</h3>
 
         <div className="locationGrid grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-10">
-          {location?.data?.map((data:LocationDataType, index:number) => (
+          {location?.data?.map((data: LocationDataType, index: number) => (
             <div
               key={index}
-              className="locationcard  border border-[#E3E3E3] p-3 rounded-xl"
+              className="locationcard  border border-[#E3E3E3] p-3 flex flex-col  rounded-xl"
             >
-              <div >
-                <Image width={240} height={200} priority quality={100} src={data.image_url} alt={data.title} className="rounded-lg h-60  w-full object-cover" />
-              </div>
               <div>
+                <Image
+                  width={240}
+                  height={200}
+                  priority
+                  quality={100}
+                  src={data.image_url}
+                  alt={data.title}
+                  className="rounded-lg h-60  mx-auto object-contain"
+                />
+              </div>
+              <div className="flex-grow">
                 <p className=" mt-4 text-xl text-primaryBlue font-bold">
                   {data.title}
                 </p>
@@ -120,7 +126,10 @@ const Location = async() => {
               </div>
               <div className="flex   gap-3 mt-5 w-full">
                 <div className="button-container  w-full">
-                  <Link className=" flex  gap-1 ExploreBtn justify-center" href={`/locations/${data.slug}`}>
+                  <Link
+                    className=" flex  gap-1 ExploreBtn justify-center"
+                    href={`/locations/${data.slug}`}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
@@ -149,14 +158,13 @@ const Location = async() => {
                     Explore
                   </Link>
                 </div>
-               
               </div>
             </div>
           ))}
         </div>
       </div>
-   </>
-  )
-}
+    </>
+  );
+};
 
-export default Location
+export default Location;
