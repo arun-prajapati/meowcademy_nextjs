@@ -56,9 +56,9 @@ const PrivacyPolicy = () => {
                 and videos of children during classes or lessons.
               </p>
               <p className=" mt-2">
-                MPL may use the material for marketing purposes such as
-                advertising on social media platforms like Instagram, Facebook,
-                Tik Tok and MPL’s website.
+                MPL may use the material such as photographs or videos of
+                students and their families at our centre for display and
+                marketing purposes.
               </p>
             </div>
           </li>
